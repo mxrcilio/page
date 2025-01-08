@@ -1,0 +1,77 @@
+body {
+    border: solid;
+    width: 95%;
+    margin: auto;
+}
+
+header{
+    padding: 5px;
+    border: 1px solid #ccc; /* Estilo opcional para visualização */
+    margin: 5px; /* Espaçamento entre os elementos */
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    max-width: 10%;
+    height: auto;
+}
+
+
+.container {
+    display: flex; /* Ativa o Flexbox */
+}
+
+.left {
+    display: flex;
+    flex-direction: column; /* Coloca as seções uma embaixo da outra */
+    width: 70vw;
+}
+
+.right {
+    display: flex;
+    flex-direction: column; /* Coloca os asides um embaixo do outro */
+    width: 30vw;
+   
+}
+
+.section, .aside {
+    padding: 10px;
+    border: 1px solid #ccc; /* Estilo opcional para visualização */
+    margin: 5px; /* Espaçamento entre os elementos */
+} 
+
+.aside-fixed {
+    flex: 1 0 auto; /* Mantém o tamanho fixo do Aside 1  aumenta o tamanho do elemento */ 
+}
+
+.aside-flexible {
+    flex: 0 1 auto; /* O Aside 2 ocupa o espaço restante */
+}
+
+footer{
+    padding: 10px;
+    border: 1px solid #ccc; /* Estilo opcional para visualização */
+    margin: 5px; /* Espaçamento entre os elementos */
+}
+
+.footer{
+    display: flex;
+}
+
+a {
+    display: flex; /* Flexbox para o link */
+    justify-content: center; /* Centraliza o conteúdo dentro do <a> */
+    align-items: center;
+    width: auto; /* Garante que a largura do link seja apenas a necessária */
+    text-decoration: none; /* Remove sublinhado, se necessário */
+}
+
+.imgfooter{
+    height: auto;
+    max-width: 30%;
+}
+
